@@ -15,10 +15,10 @@
 * Ubuntu: /etc/redis/redis.conf
 * Centos: /etc/redis.conf
 ### Comands:
-* redis-cli - enter to the CLI;
-* redis-cli client list - show active connection;
-* redis-benchmark -q - run default redis benchmark
-* redis-cli -h <REDIS_IP_ADDRESS> ping - test connection to Redis, must receive PONG
+* `redis-cli` - enter to the CLI;
+* `redis-cli client list` - show active connection;
+* `redis-benchmark -q` - run default redis benchmark
+* `redis-cli -h <REDIS_IP_ADDRESS> ping` - test connection to Redis, must receive PONG
 *
 
 ### To set the password, edit your redis.conf file, find this line: 
