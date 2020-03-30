@@ -19,7 +19,7 @@
 * `redis-cli client list` - show active connection;
 * `redis-benchmark -q` - run default redis benchmark
 * `redis-cli -h host -p port` - test connection to Redis, must receive PONG
-* `redis-cli -h host -p port -a password` - test connection to Redis with passwod , must receive PONG
+* `redis-cli -h host -p port -a password` - test connection to Redis with password , must receive PONG
 * `redis-cli info` - show info about: Server, Version, Memory, Stats, CPU
 
 ### To set the password, edit your redis.conf file, find this line: 
