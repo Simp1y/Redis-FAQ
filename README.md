@@ -19,7 +19,7 @@
 * `redis-cli client list` - show active connection;
 * `redis-benchmark -q` - run default redis benchmark
 * `redis-cli -h <REDIS_IP_ADDRESS> ping` - test connection to Redis, must receive PONG
-*
+* `redis-cli info` - show info about: Server, Version, Memory, Stats, CPU
 
 ### To set the password, edit your redis.conf file, find this line: 
 `# requirepass foobared`, then uncomment it and change foobared to your password. Make sure you choose something pretty long, 32 characters or so would probably be good
