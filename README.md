@@ -22,4 +22,4 @@
 *
 
 ### To set the password, edit your redis.conf file, find this line: 
-"# requirepass foobared", then uncomment it and change foobared to your password. Make sure you choose something pretty long, 32 characters or so would probably be good
+`# requirepass foobared`, then uncomment it and change foobared to your password. Make sure you choose something pretty long, 32 characters or so would probably be good
