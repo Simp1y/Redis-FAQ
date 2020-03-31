@@ -46,5 +46,15 @@ sudo systemctl enable redis
 ### Setup in Docker
 * Official image: https://hub.docker.com/_/redis
 > Docker-compose example:
-
-
+```sh
+redis:
+    image: redis:5.0.8
+    restart: always
+    env_file:
+      - .env/vars
+    ports:
+      - 6379:6379
+    volumes:
+      - ./.data/redis:/data
+      - $PWD/redis.conf:/usr/local/etc/redis/redis.conf
+```
