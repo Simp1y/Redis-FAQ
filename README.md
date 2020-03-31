@@ -44,5 +44,7 @@ sudo systemctl enable redis
 `# requirepass foobared`, then uncomment it and change foobared to your password. Make sure you choose something pretty long, 32 characters or so would probably be good
 
 ### Setup in Docker
-Official image: https://hub.docker.com/_/redis
+* Official image: https://hub.docker.com/_/redis
+> Docker-compose example:
+
 
