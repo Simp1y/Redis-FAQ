@@ -31,13 +31,18 @@ sudo systemctl enable redis
 * Ubuntu: /etc/redis/redis.conf
 * Centos: /etc/redis.conf
 ### Comands:
-** command usage: redis-cli redis_command
+** command usage: redis-cli **redis_command**
 * `redis-cli` - enter to the CLI;
 * `redis-cli client list` - show active connection;
 * `redis-benchmark -q` - run default redis benchmark
-* `redis-cli -h host -p port` - test connection to Redis, must receive PONG
-* `redis-cli -h host -p port -a password` - test connection to Redis with password , must receive PONG
+* `redis-cli -h host -p port` - connection to (remote)Redis without password 
+* `redis-cli -h host -p port -a password` - connection to (remote)Redis with password
+* `redis-cli -a password` - connection to (localhost)Redis with password
 * `redis-cli info` - show info about: Server, Version, Memory, Stats, CPU
 
 ### To set the password, edit your redis.conf file, find this line: 
 `# requirepass foobared`, then uncomment it and change foobared to your password. Make sure you choose something pretty long, 32 characters or so would probably be good
+
+### Setup in Docker
+Official image: https://hub.docker.com/_/redis
+
